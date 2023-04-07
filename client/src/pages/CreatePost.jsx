@@ -19,7 +19,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          "https://ai-image-generator-rcuw.onrender.com",
+          "https://ai-image-generator-rcuw.onrender.com/api/v1/dalle",
           {
             method: "POST",
             headers: {
@@ -50,7 +50,7 @@ const CreatePost = () => {
 
       try {
         const response = await fetch(
-          "https://ai-image-generator-rcuw.onrender.com",
+          "https://ai-image-generator-rcuw.onrender.com/api/v1/post",
           {
             method: "POST",
             headers: {
